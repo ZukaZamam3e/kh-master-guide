@@ -7,7 +7,7 @@ webpackJsonp([3],{
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CommandService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(207);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs__ = __webpack_require__(375);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs__ = __webpack_require__(376);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__ = __webpack_require__(247);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__);
@@ -193,11 +193,11 @@ webpackEmptyAsyncContext.id = 161;
 
 var map = {
 	"bbs-melding/bbs-melding.module": [
-		690,
+		691,
 		2
 	],
 	"command-collection/command-collection.module": [
-		691,
+		690,
 		1
 	],
 	"development/development.module": [
@@ -304,7 +304,7 @@ var Guid = (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__bbs_melding_bbs_melding__ = __webpack_require__(347);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__bbs_melding_bbs_melding__ = __webpack_require__(348);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__bbs_melding_bbs_melding__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__home_home__ = __webpack_require__(685);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_1__home_home__["a"]; });
@@ -312,7 +312,7 @@ var Guid = (function () {
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_2__list_list__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__development_development__ = __webpack_require__(349);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_3__development_development__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__command_collection_command_collection__ = __webpack_require__(348);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__command_collection_command_collection__ = __webpack_require__(347);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_4__command_collection_command_collection__["a"]; });
 
 
@@ -324,6 +324,322 @@ var Guid = (function () {
 /***/ }),
 
 /***/ 347:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CommandCollectionPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__core_collection_group__ = __webpack_require__(375);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__core_command_service__ = __webpack_require__(112);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__core_collection__ = __webpack_require__(659);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__core_acquired_command__ = __webpack_require__(660);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__core_storage_service__ = __webpack_require__(301);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (this && this.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = y[op[0] & 2 ? "return" : op[0] ? "throw" : "next"]) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [0, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
+
+
+
+
+
+
+
+/**
+ * Generated class for the CommandCollectionPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var CommandCollectionPage = (function () {
+    function CommandCollectionPage(navCtrl, navParams, commandService, storageService) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.commandService = commandService;
+        this.storageService = storageService;
+        this.collectionGroup = new Array();
+        this.acquiredCommands = new Array();
+        this.numCommands = 0;
+        this.character = "Terra";
+        this.selected = new __WEBPACK_IMPORTED_MODULE_4__core_collection__["a" /* Collection */]();
+    }
+    CommandCollectionPage.prototype.ionViewDidLoad = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            return __generator(this, function (_a) {
+                console.log('ionViewDidLoad CommandCollectionPage');
+                this.loadCommands();
+                return [2 /*return*/];
+            });
+        });
+    };
+    CommandCollectionPage.prototype.characterChanged = function () {
+        this.storageService.setCharacterSeleced(this.character);
+        this.loadCommands();
+    };
+    CommandCollectionPage.prototype.loadCommands = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            var _this = this;
+            var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m, _o, _p, _q, _r, _s, _t, _u, _v, _w, _x, _y, _z, _0, char;
+            return __generator(this, function (_1) {
+                switch (_1.label) {
+                    case 0:
+                        // Load acquired commands
+                        _a = this;
+                        return [4 /*yield*/, this.storageService.getAcquiredCommands()];
+                    case 1:
+                        // Load acquired commands
+                        _a.acquiredCommands = _1.sent();
+                        this.acquiredCommands = this.acquiredCommands.filter(function (ac) { return ac.Character === _this.character; });
+                        // Load list
+                        _b = this;
+                        return [4 /*yield*/, this.commandService.fetchAllCollection()];
+                    case 2:
+                        // Load list
+                        _b.collections = _1.sent();
+                        this.collectionGroup = [];
+                        // Load last seleted
+                        _c = this;
+                        return [4 /*yield*/, this.storageService.getCharacterSelected()];
+                    case 3:
+                        // Load last seleted
+                        _c.character = _1.sent();
+                        _e = (_d = this.collectionGroup).push;
+                        return [4 /*yield*/, this.loadCollectionGroup("Attack")];
+                    case 4:
+                        _e.apply(_d, [_1.sent()]);
+                        _g = (_f = this.collectionGroup).push;
+                        return [4 /*yield*/, this.loadCollectionGroup("Magic")];
+                    case 5:
+                        _g.apply(_f, [_1.sent()]);
+                        _j = (_h = this.collectionGroup).push;
+                        return [4 /*yield*/, this.loadCollectionGroup("Items")];
+                    case 6:
+                        _j.apply(_h, [_1.sent()]);
+                        _l = (_k = this.collectionGroup).push;
+                        return [4 /*yield*/, this.loadCollectionGroup("Friendship")];
+                    case 7:
+                        _l.apply(_k, [_1.sent()]);
+                        _o = (_m = this.collectionGroup).push;
+                        return [4 /*yield*/, this.loadCollectionGroup("Movement")];
+                    case 8:
+                        _o.apply(_m, [_1.sent()]);
+                        _q = (_p = this.collectionGroup).push;
+                        return [4 /*yield*/, this.loadCollectionGroup("Defense")];
+                    case 9:
+                        _q.apply(_p, [_1.sent()]);
+                        _s = (_r = this.collectionGroup).push;
+                        return [4 /*yield*/, this.loadCollectionGroup("Reprisals")];
+                    case 10:
+                        _s.apply(_r, [_1.sent()]);
+                        _u = (_t = this.collectionGroup).push;
+                        return [4 /*yield*/, this.loadCollectionGroup("Shotlocks")];
+                    case 11:
+                        _u.apply(_t, [_1.sent()]);
+                        _w = (_v = this.collectionGroup).push;
+                        return [4 /*yield*/, this.loadCollectionGroup("DimensionLinks")];
+                    case 12:
+                        _w.apply(_v, [_1.sent()]);
+                        _y = (_x = this.collectionGroup).push;
+                        return [4 /*yield*/, this.loadCollectionGroup("Finish")];
+                    case 13:
+                        _y.apply(_x, [_1.sent()]);
+                        _0 = (_z = this.collectionGroup).push;
+                        return [4 /*yield*/, this.loadCollectionGroup("Abilities")];
+                    case 14:
+                        _0.apply(_z, [_1.sent()]);
+                        this.numCommands = 0;
+                        char = this.character;
+                        this.collectionGroup.forEach(function (c) {
+                            _this.numCommands += c.Collection.length;
+                            c.Collection.forEach(function (cl) {
+                                if (_this.acquiredCommands.filter(function (ac) {
+                                    return ac.Command === cl.Command && ac.Character === char;
+                                }).length !== 0) {
+                                    cl.Acquired = true;
+                                }
+                            });
+                        });
+                        return [2 /*return*/];
+                }
+            });
+        });
+    };
+    CommandCollectionPage.prototype.selectCommand = function (c) {
+        var _this = this;
+        if (this.selected.Command === c.Command) {
+            c.Acquired = !c.Acquired;
+            if (c.Acquired) {
+                var acs = this.acquiredCommands.filter((function (ac) {
+                    return ac.Command === c.Command && ac.Character === _this.character;
+                }));
+                if (acs.length === 0) {
+                    var ac = new __WEBPACK_IMPORTED_MODULE_5__core_acquired_command__["a" /* AcquiredCommand */]();
+                    ac.Character = this.character;
+                    ac.Command = c.Command;
+                    this.acquiredCommands.push(ac);
+                }
+            }
+            else {
+                var acs = this.acquiredCommands.filter((function (ac) {
+                    return ac.Command === c.Command && ac.Character === _this.character;
+                }));
+                if (acs.length === 1) {
+                    var ac = acs[0];
+                    var index = this.acquiredCommands.indexOf(ac, 0);
+                    if (index > -1) {
+                        this.acquiredCommands.splice(index, 1);
+                    }
+                }
+            }
+            this.storageService.setAcquiredCommands(this.acquiredCommands);
+        }
+        else if (this.selected.Command !== '') {
+            this.selected.Selected = false;
+        }
+        var cnElems = document.getElementsByClassName("cn");
+        for (var i = 0; i < cnElems.length; ++i) {
+            cnElems[i].classList.remove("selected_command");
+        }
+        this.selected = c;
+        this.selected.Selected = true;
+    };
+    CommandCollectionPage.prototype.loadCollectionGroup = function (type) {
+        return __awaiter(this, void 0, void 0, function () {
+            var _this = this;
+            var group;
+            return __generator(this, function (_a) {
+                group = new __WEBPACK_IMPORTED_MODULE_2__core_collection_group__["a" /* CollectionGroup */]();
+                group.Group = type;
+                group.Collection = this.collections.find(function (c) { return c.Name.indexOf(_this.character) !== -1; }).Collection;
+                group.Collection = group.Collection.filter(function (c) { return c.Type.indexOf(type) !== -1; });
+                group.Collection = group.Collection.sort(function (a, b) {
+                    if (a.SortOrder < b.SortOrder) {
+                        return -1;
+                    }
+                    else if (a.SortOrder > b.SortOrder) {
+                        return 1;
+                    }
+                    else {
+                        return 0;
+                    }
+                });
+                switch (type) {
+                    case "Attack": {
+                        group.Icon = "a";
+                        break;
+                    }
+                    case "Magic": {
+                        group.Icon = "m";
+                        break;
+                    }
+                    case "Items": {
+                        group.Icon = "i";
+                        break;
+                    }
+                    case "Friendship": {
+                        group.Icon = "f";
+                        break;
+                    }
+                    case "Movement": {
+                        group.Icon = "mv";
+                        break;
+                    }
+                    case "Defense": {
+                        group.Icon = "d";
+                        break;
+                    }
+                    case "Reprisals": {
+                        group.Icon = "r";
+                        break;
+                    }
+                    case "Shotlocks": {
+                        group.Icon = "s";
+                        break;
+                    }
+                    case "DimensionLinks": {
+                        group.Icon = "dl";
+                        break;
+                    }
+                    case "Finish": {
+                        group.Icon = "f1";
+                        break;
+                    }
+                    case "Finish2": {
+                        group.Icon = "f2";
+                        break;
+                    }
+                    case "Finish3": {
+                        group.Icon = "f3";
+                        break;
+                    }
+                    case "Abilities": {
+                        group.Icon = "ab";
+                        break;
+                    }
+                    default: {
+                        break;
+                    }
+                }
+                return [2 /*return*/, group];
+            });
+        });
+    };
+    CommandCollectionPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-command-collection',template:/*ion-inline-start:"C:\Users\Alex\Desktop\Projects\kh-master-guide-actual\src\app\command-collection\command-collection.html"*/`<!--\n\n  Generated template for the CommandCollectionPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n      <button ion-button menuToggle>\n\n          <ion-icon name="menu"></ion-icon>\n\n        </button>\n\n    <ion-title>Birth By Sleep Command Collection</ion-title>\n\n  </ion-navbar>\n\n  <ion-item>\n\n      <ion-label color="primary">Character</ion-label>\n\n        <ion-select [(ngModel)]="character" interface="popover" (ionChange)="characterChanged()"> \n\n          <ion-option value="Terra">Terra</ion-option>\n\n          <ion-option value="Ventus">Ventus</ion-option>\n\n          <ion-option value="Aqua">Aqua</ion-option>\n\n        </ion-select>\n\n    </ion-item>\n\n  <div *ngIf="selected.Command !== \'\'" class="selection_div">\n\n    <div class="selection">{{selected.Command}}</div>\n\n  </div>\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n  <div class="collections">\n\n    <ion-card *ngFor="let g of collectionGroup" class="collection_card">\n\n      <div>\n\n        <div class="collection_title">\n\n          {{g.Group}}\n\n        </div>\n\n        <div id="div{{cmd.Command}}"class="command" *ngFor="let cmd of g.Collection" (click)="selectCommand(cmd)"\n\n        [ngClass]="{ selected_command: cmd.Selected }">\n\n          <img src="./assets/imgs/bbs-melding/{{cmd.Icon}}.png" [ngClass]="{ command_acquired: cmd.Acquired, command_not_acquired: !cmd.Acquired }">\n\n        </div>\n\n      </div>\n\n    </ion-card>\n\n  </div>\n\n</ion-content>\n\n\n\n<ion-footer>\n\n  <div class="selection_div">\n\n    <div class="total"><span class="left_side"></span><span class="middle">Total <span>{{acquiredCommands.length}}/{{numCommands}}</span></span><span class="right_side"></span></div>\n\n  </div>\n\n</ion-footer>`/*ion-inline-end:"C:\Users\Alex\Desktop\Projects\kh-master-guide-actual\src\app\command-collection\command-collection.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_3__core_command_service__["a" /* CommandService */], __WEBPACK_IMPORTED_MODULE_6__core_storage_service__["a" /* StorageService */]])
+    ], CommandCollectionPage);
+    return CommandCollectionPage;
+}());
+
+//# sourceMappingURL=command-collection.js.map
+
+/***/ }),
+
+/***/ 348:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -657,322 +973,6 @@ var BbsMeldingPage = (function () {
 
 /***/ }),
 
-/***/ 348:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CommandCollectionPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(39);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__core_collection_group__ = __webpack_require__(658);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__core_command_service__ = __webpack_require__(112);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__core_collection__ = __webpack_require__(659);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__core_acquired_command__ = __webpack_require__(660);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__core_storage_service__ = __webpack_require__(301);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-};
-var __generator = (this && this.__generator) || function (thisArg, body) {
-    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
-    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
-    function verb(n) { return function (v) { return step([n, v]); }; }
-    function step(op) {
-        if (f) throw new TypeError("Generator is already executing.");
-        while (_) try {
-            if (f = 1, y && (t = y[op[0] & 2 ? "return" : op[0] ? "throw" : "next"]) && !(t = t.call(y, op[1])).done) return t;
-            if (y = 0, t) op = [0, t.value];
-            switch (op[0]) {
-                case 0: case 1: t = op; break;
-                case 4: _.label++; return { value: op[1], done: false };
-                case 5: _.label++; y = op[1]; op = [0]; continue;
-                case 7: op = _.ops.pop(); _.trys.pop(); continue;
-                default:
-                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
-                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
-                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
-                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
-                    if (t[2]) _.ops.pop();
-                    _.trys.pop(); continue;
-            }
-            op = body.call(thisArg, _);
-        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
-        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
-    }
-};
-
-
-
-
-
-
-
-/**
- * Generated class for the CommandCollectionPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var CommandCollectionPage = (function () {
-    function CommandCollectionPage(navCtrl, navParams, commandService, storageService) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.commandService = commandService;
-        this.storageService = storageService;
-        this.collectionGroup = new Array();
-        this.acquiredCommands = new Array();
-        this.numCommands = 0;
-        this.character = "Terra";
-        this.selected = new __WEBPACK_IMPORTED_MODULE_4__core_collection__["a" /* Collection */]();
-    }
-    CommandCollectionPage.prototype.ionViewDidLoad = function () {
-        return __awaiter(this, void 0, void 0, function () {
-            return __generator(this, function (_a) {
-                console.log('ionViewDidLoad CommandCollectionPage');
-                this.loadCommands();
-                return [2 /*return*/];
-            });
-        });
-    };
-    CommandCollectionPage.prototype.characterChanged = function () {
-        this.storageService.setCharacterSeleced(this.character);
-        this.loadCommands();
-    };
-    CommandCollectionPage.prototype.loadCommands = function () {
-        return __awaiter(this, void 0, void 0, function () {
-            var _this = this;
-            var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m, _o, _p, _q, _r, _s, _t, _u, _v, _w, _x, _y, _z, _0, char;
-            return __generator(this, function (_1) {
-                switch (_1.label) {
-                    case 0:
-                        // Load acquired commands
-                        _a = this;
-                        return [4 /*yield*/, this.storageService.getAcquiredCommands()];
-                    case 1:
-                        // Load acquired commands
-                        _a.acquiredCommands = _1.sent();
-                        this.acquiredCommands = this.acquiredCommands.filter(function (ac) { return ac.Character === _this.character; });
-                        // Load list
-                        _b = this;
-                        return [4 /*yield*/, this.commandService.fetchAllCollection()];
-                    case 2:
-                        // Load list
-                        _b.collections = _1.sent();
-                        this.collectionGroup = [];
-                        // Load last seleted
-                        _c = this;
-                        return [4 /*yield*/, this.storageService.getCharacterSelected()];
-                    case 3:
-                        // Load last seleted
-                        _c.character = _1.sent();
-                        _e = (_d = this.collectionGroup).push;
-                        return [4 /*yield*/, this.loadCollectionGroup("Attack")];
-                    case 4:
-                        _e.apply(_d, [_1.sent()]);
-                        _g = (_f = this.collectionGroup).push;
-                        return [4 /*yield*/, this.loadCollectionGroup("Magic")];
-                    case 5:
-                        _g.apply(_f, [_1.sent()]);
-                        _j = (_h = this.collectionGroup).push;
-                        return [4 /*yield*/, this.loadCollectionGroup("Items")];
-                    case 6:
-                        _j.apply(_h, [_1.sent()]);
-                        _l = (_k = this.collectionGroup).push;
-                        return [4 /*yield*/, this.loadCollectionGroup("Friendship")];
-                    case 7:
-                        _l.apply(_k, [_1.sent()]);
-                        _o = (_m = this.collectionGroup).push;
-                        return [4 /*yield*/, this.loadCollectionGroup("Movement")];
-                    case 8:
-                        _o.apply(_m, [_1.sent()]);
-                        _q = (_p = this.collectionGroup).push;
-                        return [4 /*yield*/, this.loadCollectionGroup("Defense")];
-                    case 9:
-                        _q.apply(_p, [_1.sent()]);
-                        _s = (_r = this.collectionGroup).push;
-                        return [4 /*yield*/, this.loadCollectionGroup("Reprisals")];
-                    case 10:
-                        _s.apply(_r, [_1.sent()]);
-                        _u = (_t = this.collectionGroup).push;
-                        return [4 /*yield*/, this.loadCollectionGroup("Shotlocks")];
-                    case 11:
-                        _u.apply(_t, [_1.sent()]);
-                        _w = (_v = this.collectionGroup).push;
-                        return [4 /*yield*/, this.loadCollectionGroup("DimensionLinks")];
-                    case 12:
-                        _w.apply(_v, [_1.sent()]);
-                        _y = (_x = this.collectionGroup).push;
-                        return [4 /*yield*/, this.loadCollectionGroup("Finish")];
-                    case 13:
-                        _y.apply(_x, [_1.sent()]);
-                        _0 = (_z = this.collectionGroup).push;
-                        return [4 /*yield*/, this.loadCollectionGroup("Abilities")];
-                    case 14:
-                        _0.apply(_z, [_1.sent()]);
-                        this.numCommands = 0;
-                        char = this.character;
-                        this.collectionGroup.forEach(function (c) {
-                            _this.numCommands += c.Collection.length;
-                            c.Collection.forEach(function (cl) {
-                                if (_this.acquiredCommands.filter(function (ac) {
-                                    return ac.Command === cl.Command && ac.Character === char;
-                                }).length !== 0) {
-                                    cl.Acquired = true;
-                                }
-                            });
-                        });
-                        return [2 /*return*/];
-                }
-            });
-        });
-    };
-    CommandCollectionPage.prototype.selectCommand = function (c) {
-        var _this = this;
-        if (this.selected.Command === c.Command) {
-            c.Acquired = !c.Acquired;
-            if (c.Acquired) {
-                var acs = this.acquiredCommands.filter((function (ac) {
-                    return ac.Command === c.Command && ac.Character === _this.character;
-                }));
-                if (acs.length === 0) {
-                    var ac = new __WEBPACK_IMPORTED_MODULE_5__core_acquired_command__["a" /* AcquiredCommand */]();
-                    ac.Character = this.character;
-                    ac.Command = c.Command;
-                    this.acquiredCommands.push(ac);
-                }
-            }
-            else {
-                var acs = this.acquiredCommands.filter((function (ac) {
-                    return ac.Command === c.Command && ac.Character === _this.character;
-                }));
-                if (acs.length === 1) {
-                    var ac = acs[0];
-                    var index = this.acquiredCommands.indexOf(ac, 0);
-                    if (index > -1) {
-                        this.acquiredCommands.splice(index, 1);
-                    }
-                }
-            }
-            this.storageService.setAcquiredCommands(this.acquiredCommands);
-        }
-        else if (this.selected.Command !== '') {
-            this.selected.Selected = false;
-        }
-        var cnElems = document.getElementsByClassName("cn");
-        for (var i = 0; i < cnElems.length; ++i) {
-            cnElems[i].classList.remove("selected_command");
-        }
-        this.selected = c;
-        this.selected.Selected = true;
-    };
-    CommandCollectionPage.prototype.loadCollectionGroup = function (type) {
-        return __awaiter(this, void 0, void 0, function () {
-            var _this = this;
-            var group;
-            return __generator(this, function (_a) {
-                group = new __WEBPACK_IMPORTED_MODULE_2__core_collection_group__["a" /* CollectionGroup */]();
-                group.Group = type;
-                group.Collection = this.collections.find(function (c) { return c.Name.indexOf(_this.character) !== -1; }).Collection;
-                group.Collection = group.Collection.filter(function (c) { return c.Type.indexOf(type) !== -1; });
-                group.Collection = group.Collection.sort(function (a, b) {
-                    if (a.SortOrder < b.SortOrder) {
-                        return -1;
-                    }
-                    else if (a.SortOrder > b.SortOrder) {
-                        return 1;
-                    }
-                    else {
-                        return 0;
-                    }
-                });
-                switch (type) {
-                    case "Attack": {
-                        group.Icon = "a";
-                        break;
-                    }
-                    case "Magic": {
-                        group.Icon = "m";
-                        break;
-                    }
-                    case "Items": {
-                        group.Icon = "i";
-                        break;
-                    }
-                    case "Friendship": {
-                        group.Icon = "f";
-                        break;
-                    }
-                    case "Movement": {
-                        group.Icon = "mv";
-                        break;
-                    }
-                    case "Defense": {
-                        group.Icon = "d";
-                        break;
-                    }
-                    case "Reprisals": {
-                        group.Icon = "r";
-                        break;
-                    }
-                    case "Shotlocks": {
-                        group.Icon = "s";
-                        break;
-                    }
-                    case "DimensionLinks": {
-                        group.Icon = "dl";
-                        break;
-                    }
-                    case "Finish": {
-                        group.Icon = "f1";
-                        break;
-                    }
-                    case "Finish2": {
-                        group.Icon = "f2";
-                        break;
-                    }
-                    case "Finish3": {
-                        group.Icon = "f3";
-                        break;
-                    }
-                    case "Abilities": {
-                        group.Icon = "ab";
-                        break;
-                    }
-                    default: {
-                        break;
-                    }
-                }
-                return [2 /*return*/, group];
-            });
-        });
-    };
-    CommandCollectionPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-command-collection',template:/*ion-inline-start:"C:\Users\Alex\Desktop\Projects\kh-master-guide-actual\src\app\command-collection\command-collection.html"*/`<!--\n\n  Generated template for the CommandCollectionPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n      <button ion-button menuToggle>\n\n          <ion-icon name="menu"></ion-icon>\n\n        </button>\n\n    <ion-title>Birth By Sleep Command Collection</ion-title>\n\n  </ion-navbar>\n\n  <ion-item>\n\n      <ion-label color="primary">Character</ion-label>\n\n        <ion-select [(ngModel)]="character" interface="popover" (ionChange)="characterChanged()"> \n\n          <ion-option value="Terra">Terra</ion-option>\n\n          <ion-option value="Ventus">Ventus</ion-option>\n\n          <ion-option value="Aqua">Aqua</ion-option>\n\n        </ion-select>\n\n    </ion-item>\n\n  <div *ngIf="selected.Command !== \'\'" class="selection_div">\n\n    <div class="selection">{{selected.Command}}</div>\n\n  </div>\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n  <div class="collections">\n\n    <ion-card *ngFor="let g of collectionGroup" class="collection_card">\n\n      <div>\n\n        <div class="collection_title">\n\n          {{g.Group}}\n\n        </div>\n\n        <div id="div{{cmd.Command}}"class="command" *ngFor="let cmd of g.Collection" (click)="selectCommand(cmd)"\n\n        [ngClass]="{ selected_command: cmd.Selected }">\n\n          <img src="./assets/imgs/bbs-melding/{{cmd.Icon}}.png" [ngClass]="{ command_acquired: cmd.Acquired, command_not_acquired: !cmd.Acquired }">\n\n        </div>\n\n      </div>\n\n    </ion-card>\n\n  </div>\n\n</ion-content>\n\n\n\n<ion-footer>\n\n  <div class="selection_div">\n\n    <div class="total"><span class="left_side"></span><span class="middle">Total <span>{{acquiredCommands.length}}/{{numCommands}}</span></span><span class="right_side"></span></div>\n\n  </div>\n\n</ion-footer>`/*ion-inline-end:"C:\Users\Alex\Desktop\Projects\kh-master-guide-actual\src\app\command-collection\command-collection.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_3__core_command_service__["a" /* CommandService */], __WEBPACK_IMPORTED_MODULE_6__core_storage_service__["a" /* StorageService */]])
-    ], CommandCollectionPage);
-    return CommandCollectionPage;
-}());
-
-//# sourceMappingURL=command-collection.js.map
-
-/***/ }),
-
 /***/ 349:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1121,8 +1121,8 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_11__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */],
                 __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* MyApp */], {}, {
                     links: [
-                        { loadChildren: 'bbs-melding/bbs-melding.module#BbsMeldingPageModule', name: 'BbsMeldingPage', segment: 'bbs-melding', priority: 'low', defaultHistory: [] },
                         { loadChildren: 'command-collection/command-collection.module#CommandCollectionPageModule', name: 'CommandCollectionPage', segment: 'command-collection', priority: 'low', defaultHistory: [] },
+                        { loadChildren: 'bbs-melding/bbs-melding.module#BbsMeldingPageModule', name: 'BbsMeldingPage', segment: 'bbs-melding', priority: 'low', defaultHistory: [] },
                         { loadChildren: 'development/development.module#DevelopmentPageModule', name: 'DevelopmentPage', segment: 'development', priority: 'low', defaultHistory: [] }
                     ]
                 }),
@@ -1153,7 +1153,7 @@ var AppModule = (function () {
 
 /***/ }),
 
-/***/ 658:
+/***/ 375:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1239,7 +1239,6 @@ var MyApp = (function () {
             { title: 'Home', component: __WEBPACK_IMPORTED_MODULE_4__pages__["d" /* HomePage */] },
             { title: 'Birth By Sleep Command Melding', component: __WEBPACK_IMPORTED_MODULE_4__pages__["a" /* BbsMeldingPage */] },
             { title: 'Birth By Sleep Command Collection', component: __WEBPACK_IMPORTED_MODULE_4__pages__["b" /* CommandCollectionPage */] },
-            { title: 'Development', component: __WEBPACK_IMPORTED_MODULE_4__pages__["c" /* DevelopmentPage */] },
         ];
         //this.rootPage = BbsMeldingPage;
     }
